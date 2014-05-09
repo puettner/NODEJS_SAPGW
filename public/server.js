@@ -7,8 +7,8 @@ var http = require('http'),
  
 // The SalesOrder service requires authentication
 // get the username/password from the SCN page. 
-var username = 'i801707',
-    password = 'D-code14';
+var username = 'xxx',
+    password = 'xxx';
  
 var sapgw = {
 //  host: 'gw.esworkplace.sap.com',
