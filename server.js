@@ -11,7 +11,7 @@ var username = 'i801707',
     password = 'D-code14';
  
 var sapgw = {
-//  host: 'gw.esworkplace.sap.com',
+//    host: 'gw.esworkplace.sap.com',
     host: 'sapes1.sapdevcenter.com',
  
   // set up Basic authentication
@@ -43,7 +43,8 @@ function proxy(user_request, user_response) {
 function workbook(req, res) {
  
   // We will fetch the SalesOrderCollection from SAP Gateway
-  sapgw.path = '/sap/opu/sdata/IWFND/SALESORDER/SalesOrderCollection';
+//  sapgw.path = '/sap/opu/sdata/IWFND/SALESORDER/SalesOrderCollection';
+   sapgw.path = '/sap/opu/odata/sap/ZGWSAMPLE_SRV/SalesOrderCollection';
  
   // Kick-off by fetching the SalesOrderCollection..       
   http.get(sapgw, function (sapgw_response) {

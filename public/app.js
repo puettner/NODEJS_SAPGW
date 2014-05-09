@@ -1,5 +1,9 @@
 // Let's define some shortcuts to increase
 // readability of the code
+
+//var ODataModel = sap.ui.model.odata.ODataModel;
+
+
 var ODataModel = sap.ui.model.odata.ODataModel,
     TextView = sap.ui.commons.TextView,
     Label = sap.ui.commons.Label,
@@ -16,8 +20,8 @@ var ODataModel = sap.ui.model.odata.ODataModel,
 // Instead, the calls are made to the Node.js server,
 // which will proxy the calls to SAP GW
 // This way, we comply with Same Origin Policy of the browser. 
-var salesOrderService =
-        "/sap/opu/sdata/IWFND/SALESORDER",
+//var salesOrderService = "/sap/opu/sdata/IWFND/SALESORDER",
+var salesOrderService = "/sap/opu/odata/sap/ZGWSAMPLE_SRV",
  
     // SAP Gateway only supports XML, so don't use JSON
     asJson = false,
